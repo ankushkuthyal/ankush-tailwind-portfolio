@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Galada&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+	<title>Portfolio</title>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-0 m-0 box-border font-poppins">
+<header class="drop-shadow-[0_0px_10px_rgba(78,76,76,0.2)] fixed w-full bg-[#fff] z-[999] top-[0] transition lg:py-[5px] xs:py-[5px] drop-shadow-xl">
+	<nav class="relative flex justify-start items-center py-[8px] px-[15px] text-base font-normal text-[#212529] text-left">
+		<div class="flex items-center justify-between w-full px-[15px] mx-[auto]">
+			<a href=""><img src="ak.png" class="h-[50px] py-[0] px-0 cursor-pointer"></a>
+	        <div class="nav-links drop-shadow-[0_0px_30px_5px_#0000001c] lg:static lg:h-fit absolute bg-[#fff] h-[250px] left-0 top-[-6px] w-full flex items-center justify-center shadow-[0_-3px_10px_#efeded] lg:shadow-none transition-all duration-300 transform -translate-y-full lg:translate-y-0">
+				<ul class="lg:ml-[auto] lg:flex lg:pl-0 mb-0 list-none">
+					<li class="lg:py-0 xs:py-[8px] xs:text-center px-[15px] active">
+						<a href="#home" style="--i:0;" class="text-[#111010c7] text-base font-medium px-[8px] hover:text-[#f35875] hover:transition hover:drop-shadow-[0_0px_10px_#f35875]">Home</a>
+					</li>
+					<li class="lg:py-0 xs:py-[8px] xs:text-center px-[15px] active">
+						<a href="#about" style="--i:1;" class="text-[#111010c7] text-base font-medium px-[8px] hover:text-[#f35875] hover:transition hover:drop-shadow-[0_0px_10px_#f35875]">About</a>
+					</li>
+					<li class="lg:py-0 xs:py-[8px] xs:text-center px-[15px] active">
+						<a href="#skills" style="--i:2;" class="text-[#111010c7] text-base font-medium px-[8px] hover:text-[#f35875] hover:transition hover:drop-shadow-[0_0px_10px_#f35875]">Skills</a>
+					</li>
+					<li class="lg:py-0 xs:py-[8px] xs:text-center px-[15px] active">
+						<a href="#projects" style="--i:4;" class="text-[#111010c7] text-base font-medium px-[8px] hover:text-[#f35875] hover:transition hover:drop-shadow-[0_0px_10px_#f35875]">Projects</a>
+					</li>
+					<li class="lg:py-0 xs:py-[8px] xs:text-center px-[15px] active">
+						<a href="#my-work" style="--i:3;" class="text-[#111010c7] text-base font-medium px-[8px] hover:text-[#f35875] hover:transition hover:drop-shadow-[0_0px_10px_#f35875]">My Work</a>
+					</li>
+					<li class="lg:py-0 xs:py-[8px] xs:text-center px-[15px] active">
+						<a href="#contact" style="--i:5;" class="text-[#111010c7] text-base font-medium px-[8px] hover:text-[#f35875] hover:transition hover:drop-shadow-[0_0px_10px_#f35875]">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ion-icon name="menu" class="text-2xl cursor-pointer lg:hidden menu-icon" onclick="onToggleMenu(this)"></ion-icon>
+		</i>
+	</nav>
+</header>
+
+<div id="home" class="mt-[76px] bg-[url('background.jpg')] bg-fixed bg-cover w-full text-[#fff] flex items-center xs:h-auto">
+	<div class="xl:max-w-[1140px] px-[15px] mx-auto lg:max-w-[960px] xs:max-w-[97%]">
+		<div class="flex items-center flex-wrap mx-[-15px] lg:py-0 xs:py-[20px]">
+			<div class="sm:max-w-[50%] xs:max-w-full relative w-full px-[15px]">
+				<div>
+					<h1 class="lg:text-[30px] md:text-[24px] sm:text-[22px] xs:text-[20px] font-galada">Hello It's Me</h1>
+					<h1 class="lg:text-[30px] md:text-[24px] sm:text-[22px] xs:text-[20px] font-galada">And I am <span class="typewrite text-[#f35875] lg:text-[48px] xs:text-[38px] xs:block" data-period="2000" data-type='[" Ankush Kuthyal", "Web Designer"]'>
+		                <span class="wrap"></span>
+		                </span>
+		            </h1>
+		            <p class="mb-0 text-[18px] font-courgette font-normal">With a keen eye for design and love for crafting seamless user experiences, Explore my portfolio to witness the fusion of creativity and technology</p>
+		            <div class="sm:inline-block mt-[50px] xs:flex xs:items-center xs:justify-center">
+						<div class="group py-[10px] relative w-fit overflow-hidden h-full rounded-[22px]">
+							<a href="" before="Hire&nbsp;Me" class="font-poppins bg-[#f35875] py-[10px] px-[30px] text-[#fff] font-medium rounded-[22px] z-0 relative transition before:content-[attr(before)] before:absolute before:top-[-25px] before:right-[-20px] before:w-[50px] before:h-[50px] before:bg-custom-gradient before:rounded-[30px] before:transition-all before:duration-300 group-hover:visible hover:before:content-['Hire Me'] hover:before:absolute hover:before:top-[-3px] hover:before:right-0 hover:before:w-full hover:before:h-[47px] hover:before:bg-custom-gradient hover:before:text-[#000] hover:before:py-[12px] hover:before:px-[25px]">Hire Me
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sm:max-w-[50%] xs:max-w-full relative w-full px-[15px]">
+				<div class="flex sm:justify-end xs:justify-center mt-[40px]">
+					<img src="ankush-profile.png" class="animate-[floatimage_2s_ease-in-out_infinite] max-w-full xs:w-[80%]">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="about" class="py-[50px] bg-[url('abstract-background.png')] bg-no-repeat bg-cover w-full h-full">
+	<div class="max-w-[1140px] px-[15px] mx-auto lg:max-w-[960px] xs:max-w-[97%]">
+		<div class="flex items-center flex-wrap mx-[-15px]">
+			<div class="md:max-w-[50%] xs:max-w-full relative w-full px-[15px]">
+				<div>
+					<img src="ankush-info.png" class="max-w-full md:w-[80%] xs:w-[70%] xs:m-auto h-auto">
+				</div>
+			</div>
+			<div class="md:max-w-[50%] xs:max-w-full relative w-full px-[15px]">
+				<div>
+					<h1 class="mb-0 font-galada leading-8 sm:text-[40px] xs:text-[32px]">About <span class="text-[#f35875]">Me</span></h1>
+					<h3 class="mb-0 sm:text-[26px] xs:text-[24px] font-medium font-courgette">Web Designer</h3>
+					<p class="m-0 pt-[10px] font-courgette">I have 1 year of experience in this field having hands-on experience with design tools like HTML,CSS and possibly some JavaScript & Jquery. I have worked on various projects and collaborating with developers to produce effective & pleasing websites. As I continue to gain my experience, my expertise and ability to take on more complex projects will grow.</p>
+					 <div class="mt-[30px] sm:flex sm:justify-start xs:flex xs:justify-center">
+						<div class="py-[10px] relative w-fit overflow-hidden h-full rounded-[22px]">
+							<a href="" before="Read&nbsp;More" class="read font-poppins bg-[#f35875] py-[10px] px-[30px] text-[#fff] font-medium rounded-[22px] z-[90] relative transition before:content-[attr(before)] before:absolute before:top-[-25px] before:right-[-20px] before:w-[50px] before:h-[50px] before:bg-custom-gradient before:rounded-[30px] before:transition-all before:duration-300 group-hover:visible hover:before:content-['Hire Me'] hover:before:absolute hover:before:top-[-3px] hover:before:right-0 hover:before:w-full hover:before:h-[47px] hover:before:bg-custom-gradient hover:before:text-[#000] hover:before:py-[12px] hover:before:px-[25px]">Read More
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="skills" class="pt-[50px]">
+			<h1 class="mb-0 text-center font-galada sm:text-[40px] xs:text-[32px]">My <span class="text-[#f35875]">Skills</span></h1>
+			<div class="flex justify-between flex-wrap mx-[-15px]">
+				<div class="sm:max-w-[45%] xs:max-w-full relative w-full px-[15px]">
+					<div class="font-poppins">
+						<h3 class="mb-0 font-galada mt-[40px] text-[26px] text-center">Techincal <span class="text-[#f35875]">Skills</span></h3>
+						<div class="mt-[30px] font-poppins">
+							<div>
+								<div class="flex justify-between w-full lg:pr-[20px] md:pr-[10px] sm:pr-0 xs:pr-[25px]">
+									<p class="m-0 font-semibold text-base">HTML</p>
+									<p class="m-0 font-semibold text-base">90%</p>
+								</div>
+								<div class="bg-[linear-gradient(rgba(17,16,16,0.78),rgba(217,217,217,0.00))] rounded-[30px] mb-[35px] h-[18px] flex overflow-hidden leading-0 text-[15px] ">
+									<div class="bg-[#f35875] rounded-[30px] flex flex-col justify-center overflow-hidden text-[#fff] text-center transition" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between w-full sm:pr-0 xs:w-[75%] xs:pr-[5px]">
+									<p class="m-0 font-semibold text-base">CSS</p>
+									<p class="m-0 font-semibold text-base">70%</p>
+								</div>
+								<div class="bg-[linear-gradient(rgba(17,16,16,0.78),rgba(217,217,217,0.00))] rounded-[30px] mb-[35px] h-[18px] flex overflow-hidden leading-0 text-[15px] ">
+									<div class="bg-[#f35875] rounded-[30px] flex flex-col justify-center overflow-hidden text-[#fff] text-center transition" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between sm:pr-0 xs:pr-[5px] xs:w-[85%]">
+									<p class="m-0 font-semibold text-base md:min-w-[215px]">Bootstrap</p>
+									<p class="m-0 font-semibold text-base">80%</p>
+								</div>
+								<div class="bg-[linear-gradient(rgba(17,16,16,0.78),rgba(217,217,217,0.00))] rounded-[30px] mb-[35px] h-[18px] flex overflow-hidden leading-0 text-[15px] ">
+									<div class="bg-[#f35875] rounded-[30px] flex flex-col justify-center overflow-hidden text-[#fff] text-center transition" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sm:max-w-[45%] xs:max-w-full relative w-full px-[15px]">
+					<div class="font-poppins">
+						<h3 class="mb-0 font-galada mt-[40px] text-[26px] text-center">Graphic <span class="text-[#f35875]">Skills</span></h3>
+						<div class="mt-[30px] font-poppins">
+							<div>
+								<div class="flex justify-between lg:pr-[20px] md:pr-[10px] sm:pr-0 xs:pr-[25px]">
+									<p class="m-0 font-semibold text-base">Photoshop</p>
+									<p class="m-0 font-semibold text-base">90%</p>
+								</div>
+								<div class="bg-[linear-gradient(rgba(17,16,16,0.78),rgba(217,217,217,0.00))] rounded-[30px] mb-[35px] h-[18px] flex overflow-hidden leading-0 text-[15px] ">
+									<div class="bg-[#f35875] rounded-[30px] flex flex-col justify-center overflow-hidden text-[#fff] text-center transition" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between w-full sm:pr-0 xs:pr-[5px] xs:w-[85%]">
+									<p class="m-0 font-semibold text-base">Figma</p>
+									<p class="m-0 font-semibold text-base">80%</p>
+								</div>
+								<div class="bg-[linear-gradient(rgba(17,16,16,0.78),rgba(217,217,217,0.00))] rounded-[30px] mb-[35px] h-[18px] flex overflow-hidden leading-0 text-[15px] ">
+									<div class="bg-[#f35875] rounded-[30px] flex flex-col justify-center overflow-hidden text-[#fff] text-center transition" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div>
+								<div class="flex justify-between w-full sm:pr-0 xs:w-[73%] xs:pr-[10px]">
+									<p class="m-0 font-semibold text-base">Canva</p>
+									<p class="m-0 font-semibold text-base">65%</p>
+								</div>
+								<div class="bg-[linear-gradient(rgba(17,16,16,0.78),rgba(217,217,217,0.00))] rounded-[30px] mb-[35px] h-[18px] flex overflow-hidden leading-0 text-[15px] ">
+									<div class="bg-[#f35875] rounded-[30px] flex flex-col justify-center overflow-hidden text-[#fff] text-center transition" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="projects" class="py-[50px] bg-[url('skills-background.png')] bg-cover bg-no-repeat w-full h-full">
+	<div class="max-w-[1140px] px-[15px] mx-auto lg:max-w-[960px] xs:max-w-[97%]">
+		<h1 class="font-galada sm:text-[40px] xs:text-[32px] text-center">Latest <span class="text-[#f35875]">Projects</span></h1>
+		<div class="flex justify-center flex-wrap mx-[-15px] mt-[40px]">
+			<div class="relative w-full px-[15px] md:max-w-[33.33%] sm:max-w-[50%]">
+				<div>
+					<div class="group drop-shadow-[0_0px_10px_rgba(78,76,76,0.7)] rounded-[10px] relative overflow-hidden text-right">
+						<img src="aquantuo.png" class="max-w-full w-full h-auto">
+						<div class="content bg-[linear-gradient(rgba(17,16,16,0.78),rgba(243,88,117,1))] absolute bottom-[-100%] h-[100%] lg:p-[15px] md:p-[20px] text-[#fff] w-full transition rounded-[10px] flex flex-col lg:justify-between md:justify-around xs:justify-evenly transition-all duration-500 cursor-pointer group-hover:bottom-0 sm:py-[25px] sm:px-[25px] xs:py-[30px] xs:px-[25px]">
+							<h1 class="lg:text-[28px] lg:mt-[10px] xs:text-[24px] xs:leading-6 font-galada text-center m-0">Aquantuo</h1>
+							<p class="m-0 lg:text-[18px] md:text-[15px] xs:text-[18px] text-center lg:leading-6 lg:leading-[20px] md:leading-[18px] xs:leading-[21px] font-galada xs:mt-[8px] sm:mt-0">We provide e-commerce, shipping and small businesses and large enterprises, connecting Africa with the rest of the world.</p>
+						</div>
+					</div>
+					<p class="text-center pt-[20px] font-galada leading-6 lg:text-[24px] xs:text-[20px]">Aquantuo</p>
+				</div>
+			</div>
+			<div class="relative w-full px-[15px] md:max-w-[33.33%] sm:max-w-[50%]">
+				<div>
+					<div class="group drop-shadow-[0_0px_10px_rgba(78,76,76,0.7)] rounded-[10px] relative overflow-hidden text-right xs:mt-[25px] sm:mt-0">
+						<img src="pablo.png" class="max-w-full w-full h-auto">
+						<div class="content bg-[linear-gradient(rgba(17,16,16,0.78),rgba(243,88,117,1))] absolute bottom-[-100%] h-[100%] lg:p-[15px] md:p-[20px] text-[#fff] w-full transition rounded-[10px] flex flex-col lg:justify-between md:justify-around xs:justify-evenly transition-all duration-500 cursor-pointer group-hover:bottom-0cursor-pointer group-hover:bottom-0 xs:py-[30px] xs:px-[25px]">
+							<h1 class="lg:text-[28px] lg:mt-[10px] xs:text-[24px] xs:leading-6 font-galada text-center m-0">Pablo</h1>
+							<p class="m-0 lg:text-[18px] md:text-[15px] xs:text-[18px] text-center lg:leading-6 lg:leading-[20px] md:leading-[18px] xs:leading-[21px] font-galada xs:mt-[8px] sm:mt-0">A better way to book locations. Location genie connects property hosts with renters looking to film or have an event in their home or space.</p>
+						</div>
+					</div>
+					<p class="text-center pt-[20px] font-galada leading-6 lg:text-[24px] xs:text-[20px]">Pablo</p>
+				</div>
+			</div>
+			<div class="relative w-full px-[15px] md:max-w-[33.33%] sm:max-w-[50%]">
+				<div class="sm:mt-[25px] md:mt-0">
+					<div class="group drop-shadow-[0_0px_10px_rgba(78,76,76,0.7)] rounded-[10px] relative overflow-hidden text-right xs:mt-[25px] sm:mt-0">
+						<img src="volca.png" class="max-w-full w-full h-auto">
+						<div class="content bg-[linear-gradient(rgba(17,16,16,0.78),rgba(243,88,117,1))] absolute bottom-[-100%] h-[100%] lg:p-[15px] md:p-[20px] text-[#fff] w-full transition rounded-[10px] flex flex-col lg:justify-between md:justify-around xs:justify-evenly transition-all duration-500 cursor-pointer group-hover:bottom-0 cursor-pointer group-hover:bottom-0 xs:py-[30px] xs:px-[25px]">
+							<h1 class="lg:text-[28px] lg:mt-[10px] xs:text-[24px] xs:leading-6 font-galada text-center m-0">Volca</h1>
+							<p class="m-0 lg:text-[18px] md:text-[15px] xs:text-[18px] text-center lg:leading-6 lg:leading-[20px] md:leading-[18px] xs:leading-[21px] font-galada xs:mt-[8px] sm:mt-0">Water is nothing but life. Always want safe and good water for healthy life. Volca is 100% natural, pristine & refreshing Waterfall water.</p>
+						</div>
+					</div>
+					<p class="text-center pt-[20px] font-galada leading-6 lg:text-[24px] xs:text-[20px]">Volca</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="my-work" class="py-[50px] bg-[url('curve.png')] bg-cover bg-no-repeat w-full h-full">
+	<div class="xl:max-w-[1140px] mx-auto px-[15px] lg:max-w-[960px] md:max-w-[800px] sm:max-w-[540px] xs:max-w-[97%]">
+		<h1 class="text-center font-galada sm:text-[40px] xs:text-[32px] font-medium">My <span class="text-[#f35875]">Work</span></h1>
+		<div class="flex items-center flex-wrap mx-[-15px] mt-[20px]">
+			<div class="md:max-w-[50%] xs:max-w-full maxpx-[15px] relative w-full">
+				 <div class="w-[260px] mx-auto mt-[50px] mb-[20px] bg-[url('phone.png')] bg-contain bg-no-repeat pt-[50px] h-[500px] font-roboto">
+				    <div class="max-w-[1140px] px-[15px] mx-auto w-full">
+				    	<div class="relative left-[-3px]">
+				    		<div class="flex justify-between p-[10px] bg-[#008069] ">
+								<div>
+									<p class="m-0 font-medium text-[#fff]">WhatsApp</p>
+								</div>
+								<div class="text-[#fff]">
+									<i class="fas fa-camera ml-[20px]"></i>
+									<i class="fas fa-search ml-[20px]"></i>
+						      		<i class="fas fa-ellipsis-v ml-[20px] "></i>
+								</div>
+							</div>
+							<div>
+								 <ul class="flex flex-wrap -mb-px bg-[#008069]" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+						            <li class="w-1/3" role="presentation">
+						                <button class="inline-block text-[#b2ddd4] py-4 px-[23px] text-sm font-normal text-center border-transparent border-b-[3px] active focus:border-white focus:text-white active:border-white active:text-white" id="chats-tab" data-tabs-target="#chats" type="button" role="tab" aria-controls="chats" aria-selected="true">Chats</button>
+						            </li>
+						            <li class="w-1/3" role="presentation">
+						                <button class="inline-block text-[#b2ddd4] py-4 px-[23px] text-sm font-normal text-center border-transparent border-b-[3px] dark:text-gray-400 focus:border-white focus:text-white active:border-white active:text-white" id="status-tab" data-tabs-target="#status" type="button" role="tab" aria-controls="status" aria-selected="false">Status</button>
+						            </li>
+						            <li class="w-1/3" role="presentation">
+						                <button class="inline-block text-[#b2ddd4] py-4 px-[23px] text-sm font-normal text-center border-transparent border-b-[3px] dark:text-gray-400 focus:border-white focus:text-white active:border-white active:text-white" id="calls-tab" data-tabs-target="#calls" type="button" role="tab" aria-controls="calls" aria-selected="false">Calls</button>
+						            </li>
+						        </ul>
+							</div>
+				      		<div id="myTabContent">
+						        <div class="bg-gray-50 p-0 rounded-lg dark:bg-gray-800" id="chats" role="tabpanel" aria-labelledby="chats-tab">
+						            <div class="whatsapp overflow-y-auto h-[333px] py-[10px] ">
+									<div class="flex justify-around py-[8px] ">
+										<img src="s2.jpg" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">10:25 am</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="s5.jpg" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">10:30 am</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="s6.jpg" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">2:15 pm</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="team-2.jpg" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">1:27 pm</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="member.png" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">3:27 pm</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="s3.jpg" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">Yesterday</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="team5.jpg" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">5:15 pm</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="testimonial.png" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">6:30 pm</p>
+									</div>
+									<div class="flex justify-around py-[8px] ">
+										<img src="aboutpaul.png" class="max-w-full rounded-full h-[30px] w-[30px] ">
+										<div class="min-w-[140px] max-w-[170px] whitespace-nowrap">
+											<p class="m-0 font-bold overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Online Business Group</p>
+											<p class="m-0 font-normal overflow-hidden whitespace-nowrap text-ellipsis w-[120px] text-[14px]">Hi</p>
+										</div>
+										<p class="m-0 text-[13px] ml-[-20px] font-normal">7:05 pm</p>
+									</div>
+								</div>
+						        </div>
+						        <div class="bg-gray-50 p-0 rounded-lg dark:bg-gray-800 hidden" id="status" role="tabpanel" aria-labelledby="status-tab">
+						           <div class="flex gap-[10px] py-[10px] px-[5px]">
+								 		<div>
+								 			<img src="status.png" class="max-w-full h-auto">
+								 		</div>
+								 		<div>
+								 			<p class="m-0 text-[14px] font-bold font-roboto">My Status</p>
+								 			<p class="m-0 max-w-[220px] text-[14px] font-normal">Tap to add status update</p>
+								 		</div>
+							 		</div>
+						        </div>
+						        <div class="bg-gray-50 p-0 rounded-lg dark:bg-gray-800 hidden" id="calls" role="tabpanel" aria-labelledby="calls-tab">
+						            <div class="flex items-center gap-[10px] py-[10px] px-[5px]">
+										<div>
+											<img src="link.png" class="max-w-full h-auto cursor-pointer w-[45px]">
+										</div>
+										<div>
+											<p class="m-0 text-[14px] font-bold font-roboto">Create Call Link</p>
+											<p class="m-0 max-w-[220px] text-[14px] font-normal">Share a link for your Whatsapp Call</p>
+										</div>
+									</div>
+						        </div>
+						    </div>
+				    	</div>
+				    </div>
+				  </div>
+				  <p class="text-center text-[20px] font-galada">Whatsapp Clone</p>
+			</div>
+			
+			<div class="md:max-w-[50%] xs:max-w-full sm:px-[15px] xs:pl-0 relative w-full">
+				<div class="md:h-[500px] xs:h-auto flex items-center justify-center mt-[50px] mx-auto mb-0">
+					<img src="seesaw.png" class="seesaw max-w-full h-auto rotate-12 drop-shadow relative sm:w-[300px] xs:w-[265px] animate-[updown_3s_ease-in-out_0s_infinite_alternate] drop-shadow-[10px_10px_3px_rgba(229,232,235,1)]">
+					<img src="stand.png" class="stand max-w-full h-auto absolute md:top-[340px] sm:top-[195px] xs:top-[178px] xl:left-[260px] lg:left-[215px] md:left-[170px] sm:left-[245px] xs:left-[44%] w-[30px]">
+				</div>
+				<p class="text-center text-[20px] font-galada sm:mt-0 xs:mt-[20px]">Seesaw</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="contact" class="py-[50px] bg-[url('contact-background.png')] bg-cover bg-no-repeat w-full h-full font-poppins">
+	 <div class="xl:max-w-[1140px] px-[15px] mx-auto lg:max-w-[960px] xs:max-w-[97%]">
+	 	<div class="lg:mt-[200px] xs:mt-[20px] relative">
+	 		<img src="workinggirl.png" class="max-w-full h-auto absolute lg:w-[250px] z-[10] lg:top-[-40px] lg:left-[-20px] md:w-[215px] xs:top-[10px] md:left-[-25px] sm:w-[170px] sm:left-[-30px] md:top-0 sm:top-[30px] xs:w-[145px] xs:left-[-40px]">
+	 		<h1 class="sm:text-[40px] xs:text-[28px] font-galada text-center">Contact <span class="text-[#f35875]">Me</span></h1>
+	 		<div class="bg-[linear-gradient(rgba(217,217,217,1),rgba(255,252,252,0.00))] shadow-[5px_5px_10px_0px_rgb(245,245,245,1)] shadow-[5px_-5px_10px_0px_rgb(245,245,245,90%)] shadow-[5px_5px_62px_0px_rgb(0,0,0,20%)] shadow-[-1px_-1px_2px_0px_rgb(0,0,0,20%)] shadow-[1px_1px_2px_0px_rgb(245,245,245,1)] rounded-[30px] md:p-[30px] md:my-[50px] sm:py-[30px] sm:px-[20px] xs:py-[30px] xs:px-0 mx-auto sm:w-[85%] xs:w-[95%] md:my-0 xs:my-[50px] relative">
+	 			<div class="shadow-[inset_0_0px_10px_3px_rgb(17,16,16,14%)] bg-white rounded-[30px] xs:m-[20px] sm:m-[30px] xs:p-[20px] sm:p-[30px] lg:p-[50px] xs:px-[20px] lg:px-[50px]">
+	 				<div class="flex justify-between xs:flex-wrap md:flex-nowrap xs:break-all sm:break-normal">
+	 					<div class="md:w-[50%]">
+	 						<p class="font-galada text-[26px]">Get in Touch</p>
+	 						<div class="flex items-start gap-[10px] mt-[20px]">
+	 							<img src="map.png" class="cursor-pointer xs:w-[17px] sm:w-auto">
+	 							<box-icon type='logo' name='linkedin-square'></box-icon>
+	 							<div class="leading-[20px]">
+	 								<p class="text-[#ED143D] text-[16px] font-medium">Location</p>
+	 								<p class="xs:text-[14px] sm:text-[16px] xs:leading-[20px] sm:leading-[26px]">New Sunny Enclave, Sector 125, Mohali</p>
+	 							</div>
+	 						</div>
+	 						<div class="flex items-start gap-[10px] mt-[30px]">
+	 							<img src="call.png" class="cursor-pointer xs:w-[20px] sm:w-auto">
+	 							<div class="leading-[20px]">
+	 								<p class="text-[#ED143D] text-[16px] font-medium">Phone</p>
+	 								<p class="xs:text-[14px] sm:text-[16px] xs:leading-[20px] sm:leading-[26px]">+91 8847026793</p>
+	 							</div>
+	 						</div>
+	 						<div class="flex items-start gap-[10px] mt-[30px]">
+	 							<img src="email.png" class="cursor-pointer xs:w-[20px] sm:w-auto">
+	 							<div class="leading-[20px]">
+	 								<p class="text-[#ED143D] text-[16px] font-medium">Email</p>
+	 								<p class="xs:text-[14px] md:text-[16px] xs:leading-[20px] sm:leading-[26px] md:break-all md:pr-[5px] xs:whitespace-nowrap">ankuuu125@gmail.com</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="md:h-[250px] xs:mt-[30px] xs:w-full md:w-[50%]">
+	 						<iframe class="h-[300px] md:h-[250px] xs:w-full"
+						        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13714.884788557994!2d76.65023614433355!3d30.75433203333944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff01e469d3657%3A0xf2628e883abcdf6b!2sSector%20125%2C%20Sunny%20Enclave%2C%20Kharar%2C%20Punjab%20140301%2C%20India!5e0!3m2!1sen!2sus!4v1719659811518!5m2!1sen!2sus" 
+						        class="w-full h-96 border-0" 
+						        allowfullscreen="" 
+						        loading="lazy" 
+						        referrerpolicy="no-referrer-when-downgrade">
+						    </iframe>
+	 					</div>
+	 				</div>
+	 				<div class="text-center mt-[30px]">
+	 					<p class="font-galada text-[26px]">Follow <span class="text-[#ED143D]">Me</span></p>
+	 					<div class="flex items-center justify-center gap-[10px]">
+	 						<a href="https://www.linkedin.com/" class="hover:text-[#ED143D]">
+	 							<img src="linkedin.png" class="cursor-pointer">
+	 						</a>
+	 						<a href="https://dribbble.com/">
+	 							<img src="dribble.png" class="cursor-pointer">
+	 						</a>
+	 						<a href="https://www.behance.net/">
+	 							<img src="behance.png" class="cursor-pointer">
+	 						</a>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+</div>
+
+<div class="bg-[rgba(17,16,16,0.78)] py-[5px] px-0 font-poppins">
+	<p class="m-0 text-center text-[#fff] text-base">Made with <i class="fas fa-heart text-[#f35875]"></i>&nbsp; by Ankush</p>
+</div>
+
+</body>
+<script type="text/javascript">
+	tailwind.config = {
+		 theme: {
+		    screens: {
+		      'sm': '575px',
+		      'md': '767px',
+		      'lg': '992px',
+		      'xl': '1200px',
+		    },
+		    extend: {
+		      screens: {
+		        'xs': '320px',
+		      },
+		      fontFamily: {
+		        'galada': ['Galada', 'cursive'],
+		        'courgette': ['Courgette', 'cursive'],
+		        'roboto': ['Roboto'],
+		        'poppins': ['Poppins','sans-serif'],
+		      },
+		       textShadow: {
+		        sm: '0 1px 2px var(#f35875)',
+		        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+		        lg: '0 8px 16px var(--tw-shadow-color)',
+		      },
+		      boxShadow: {
+				  'custom': '0px 0px 10px 3px rgba(17, 16, 16, 0.5)',
+				},
+		      keyframes: {
+		        floatimage: {
+		          '0%, 100%': { transform: 'translateY(0)' },
+		          '50%': { transform: 'translateY(-10px)' },
+		        },
+		        updown:{
+		        	'from':{ transform: 'rotate(0deg)' },
+		        	'to':{ transform: 'rotate(25deg)' },
+		        },
+      		  },
+      		  backgroundImage: {
+		        'custom-gradient': 'linear-gradient(#ada8a8 10%, #fff 100%, #ED143D 100%)',
+		      },
+    		},
+	  	},
+	  	plugins: [
+	    function ({ addUtilities }) {
+	      const newUtilities = {
+	        '.active[role="tab"], .active[role="tab"]:hover': {
+	          borderColor: '#fff',
+	          color: '#fff',
+	        },
+	        '.whatsapp::-webkit-scrollbar': {
+	          width: '5px',
+	        },
+	        '.whatsapp::-webkit-scrollbar-track': {
+	          background: '#f1f1f1',
+	        },
+	        '.whatsapp::-webkit-scrollbar-thumb': {
+	          background: '#008069',
+	        },
+	        '.whatsapp::-webkit-scrollbar-thumb:hover': {
+	          background: '#008069',
+	        },
+	        '::-webkit-scrollbar': {
+	          width: '5px',
+	        },
+	        '::-webkit-scrollbar-track': {
+	          background: '#f1f1f1',
+	        },
+	        '::-webkit-scrollbar-thumb': {
+	          background: '#f35875',
+	        },
+	        '::-webkit-scrollbar-thumb:hover': {
+	          background: '#f35875',
+	        },
+
+	      };
+
+	      addUtilities(newUtilities, ['responsive', 'hover']);
+	    },
+	  ],
+	  
+	};
+</script>
+<script type="text/javascript">
+      var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 7) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 100;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+    };
+    </script>
+<script>
+      document.getElementById('phone').addEventListener('input', function (event) {
+        event.target.value = event.target.value.replace(/[^0-9]/g, '');
+      });
+</script>
+<!-- <script type="text/javascript">
+	const navLinks = document.querySelector('.nav-links')
+	function onToggleMenu(e){
+		e.name = e.name === 'menu' ? 'close' : 'menu';
+		navLinks.classList.toggle('top-[71px]');
+	}
+</script> -->
+<script>
+	function onToggleMenu(icon) {
+  const navLinks = document.querySelector('.nav-links');
+  const isVisible = navLinks.classList.contains('translate-y-0');
+  
+  if (isVisible) {
+    navLinks.classList.remove('translate-y-0');
+    navLinks.classList.add('-translate-y-full');
+    icon.setAttribute('name', 'menu');
+  } else {
+    navLinks.classList.remove('-translate-y-full');
+    navLinks.classList.add('translate-y-0');
+    icon.setAttribute('name', 'close'); // Assuming 'close' is the name of the cross icon
+  }
+}
+	</script>
+
+<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+</html>
